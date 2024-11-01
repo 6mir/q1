@@ -2,7 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const singer = urlParams.get("singer");
 
-fetch("/data/song.json")
+fetch("https://raw.githubusercontent.com/6mir/q1/refs/heads/main/data/song.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
@@ -38,7 +38,7 @@ function createCards(data, containerId) {
 }
 
 // بارگذاری داده‌های ریمیکس ها
-fetch("/data/remixes.json")
+fetch("https://raw.githubusercontent.com/6mir/q1/refs/heads/main/data/remixes.json")
   .then((response) => response.json())
   .then((data) => {
     const selectedRemixes = [2, 4, 3, 1]
