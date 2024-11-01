@@ -1,5 +1,5 @@
 // StarT main-1
-fetch("/data/artic.json")
+fetch("https://raw.githubusercontent.com/6mir/q1/refs/heads/main/data/artic.json")
   .then((response) => response.json())
   .then((data) => {
     const idsToSelect = ["hichkas", "yas", "tomaj", "najafi"];
