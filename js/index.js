@@ -1,5 +1,5 @@
 // StarT main-1: بارگذاری آرتیست‌ها
-fetch("/data/artic.json")
+fetch("https://raw.githubusercontent.com/6mir/q1/refs/heads/main/data/artic.json")
   .then((response) => response.json())
   .then((data) => {
     const songList = document.getElementById("allartic");
@@ -47,7 +47,7 @@ const loadAndCreateSongs = (filePath, selectedIds, containerId) => {
 };
 
 // بارگذاری و نمایش آهنگ‌های اصلی
-loadAndCreateSongs("/data/song.json", [1, 2, 3, 4], "song-list");
+loadAndCreateSongs("https://raw.githubusercontent.com/6mir/q1/refs/heads/main/data/song.json", [1, 2, 3, 4], "song-list");
 
 // بارگذاری ریمیکس‌ها بدون تغییر
 const loadAndCreateRemixes = (filePath, selectedIds, containerId) => {
@@ -63,5 +63,5 @@ const loadAndCreateRemixes = (filePath, selectedIds, containerId) => {
 };
 
 // بارگذاری داده‌های ریمیکس
-loadAndCreateRemixes("/data/remixes.json", [1, 6, 2, 5, 3, 4], "remixes-list");
+loadAndCreateRemixes("https://raw.githubusercontent.com/6mir/q1/refs/heads/main/data/remixes.json", [1, 6, 2, 5, 3, 4], "remixes-list");
 // EnD main-2 & main-3
