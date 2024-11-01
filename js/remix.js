@@ -9,7 +9,7 @@ function createCards(data, containerId) {
 
 // Load and create songs based on selected IDs
 const loadAndCreateSongs = async () => {
-  const filePath = "/data/song.json";
+  const filePath = "https://raw.githubusercontent.com/6mir/q1/refs/heads/main/data/song.json";
   const selectedIds = [1, 2, 3, 4]; // Set selected IDs here
   const containerId = "song-list"; // Set container ID here
 
@@ -32,7 +32,7 @@ const loadAndCreateSongs = async () => {
 loadAndCreateSongs();
 
 // Load remix data
-fetch("/data/remixes.json")
+fetch("https://raw.githubusercontent.com/6mir/q1/refs/heads/main/data/remixes.json")
   .then((response) => response.json())
   .then((data) => createCards(data.remixes, "remixes-list"))
   .catch((error) => console.error("Error loading remixes:", error));
