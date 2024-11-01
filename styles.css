@@ -63,6 +63,9 @@ header {
     align-items: center;
     padding: 7px;
     border-radius: 10px;
+    border-top: 2px solid #142339;
+    
+    
 
     .search-box {
       width: 100%;
@@ -112,12 +115,14 @@ main {
   #main-1,
   #main-2,
   #main-3 {
+    border-block: 2px solid #142339;
     background-color: var(--bgc1);
     margin-inline: 20px;
     padding-top: 2px;
     padding-bottom: 12px;
     border-radius: 5px;
     margin-top: 3px;
+    
 
     .box {
       display: flex;
@@ -293,6 +298,12 @@ footer {
   padding: 99px 10px 5px 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-inline: 2px solid #142339;
+  border-top: 2px solid #142339;
+  
+  
+  
+  
 
   .topsite {
     cursor: pointer;
